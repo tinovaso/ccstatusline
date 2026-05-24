@@ -80,5 +80,5 @@ The project has dual runtime compatibility - works with both Bun and Node.js:
 ## Personal Notes
 
 > Forked from [sirmalloc/ccstatusline](https://github.com/sirmalloc/ccstatusline) for personal use.
-> Main reason: wanted to understand how the renderer handles terminal width truncation.
-> See `src/utils/renderer.ts` for the truncation logic — that's the interesting bit.
+> Main reason: wanted to tweak default token warning thresholds and experiment with custom color schemes.
+> If upstream gets major updates, check `renderer.ts` and `model-context.ts` first before merging.
