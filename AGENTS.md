@@ -75,10 +75,10 @@ The project has dual runtime compatibility - works with both Bun and Node.js:
   - Maps model IDs to their context window sizes based on [1m] suffix
   - Sonnet 4.5 WITH [1m] suffix: 1M tokens (800k usable at 80%) - requires long context beta access
   - Sonnet 4.5 WITHOUT [1m] suffix: 200k tokens (160k usable at 80%)
-  - Legacy mo
+  - Legacy models default to 200k tokens
 
 ## Personal Notes
 
 > Forked from [sirmalloc/ccstatusline](https://github.com/sirmalloc/ccstatusline) for personal use.
-> Main reason: wanted to tweak default token warning thresholds and experiment with custom color schemes.
-> If upstream gets major updates, check `renderer.ts` and `model-context.ts` first before merging.
+> Main reason: I wanted to tweak the token usage warning threshold from 80% to 75% to get
+> earlier warnings before hitting context limits. See `src/utils/model-context.ts`.
