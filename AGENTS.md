@@ -80,5 +80,5 @@ The project has dual runtime compatibility - works with both Bun and Node.js:
 ## Personal Notes
 
 > Forked from [sirmalloc/ccstatusline](https://github.com/sirmalloc/ccstatusline) for personal use.
-> My main interest is tweaking the token usage display thresholds and default colors.
-> Keeping this fork minimal — only customizing defaults, not changing core logic.
+> My main interest is tweaking the default color scheme and token usage display thresholds.
+> Settings file lives at `~/.config/ccstatusline/settings.json` — back this up before running `bun run build`.
